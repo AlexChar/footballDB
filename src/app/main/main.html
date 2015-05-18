@@ -1,5 +1,9 @@
 <div class="container">
 
-  {{ leagues }}
+  <ul class="mainMenu">
+    <li class="menu" ng-repeat="league in leagues">
+      <a href="{{ league._links.leagueTable.href }}">{{ league.caption }} </a>
+    </li>
+  </ul>
 
 </div>
